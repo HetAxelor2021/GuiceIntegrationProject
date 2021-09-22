@@ -4,3 +4,93 @@
  * This is a general purpose Gradle build.
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.0/samples
  */
+plugins {
+	id 'application'
+	id 'war'
+	
+	
+	id 'org.gretty' version '2.2.0'
+}
+//apply plugin : 'application';
+//apply plugin : 'war';
+//apply plugin : 'org.gretty' ;
+//apply plugin : 'java';
+//
+//sourceCompatibility = 1.8
+//targetCompatibility = 1.8
+
+repositories {
+	jcenter()
+	mavenCentral()
+}
+
+dependencies{
+	
+	
+	
+	implementation 'org.hibernate:hibernate-c3p0:5.5.7.Final'
+	
+	// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+	compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+	
+	
+	
+	implementation 'javax.servlet:jstl:1.2'
+
+	// https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api
+	compileOnly 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
+
+	// https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl
+	runtimeOnly 'org.apache.taglibs:taglibs-standard-impl:1.2.5'
+
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-client
+	implementation 'org.jboss.resteasy:resteasy-client:4.7.1.Final'
+
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-guice
+	implementation 'org.jboss.resteasy:resteasy-guice:4.7.1.Final'
+	
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-html
+	implementation 'org.jboss.resteasy:resteasy-html:4.7.1.Final'
+	
+	// https://mvnrepository.com/artifact/org.postgresql/postgresql
+	implementation 'org.postgresql:postgresql:42.2.20'
+	
+	// hibernate dependecy
+	implementation 'org.hibernate:hibernate-core:5.5.6.Final'
+		
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxb-provider
+	implementation 'org.jboss.resteasy:resteasy-jaxb-provider:4.7.1.Final'
+	
+	// https://mvnrepository.com/artifact/com.google.inject/guice
+	implementation 'com.google.inject:guice:5.0.1'
+		
+	implementation 'org.jboss.resteasy:resteasy-servlet-initializer:4.7.1.Final'
+	
+	// https://mvnrepository.com/artifact/com.google.inject.extensions/guice-servlet
+	implementation 'com.google.inject.extensions:guice-servlet:5.0.1'
+
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-binding-provider
+	implementation 'org.jboss.resteasy:resteasy-json-binding-provider:4.7.1.Final'
+	
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-core
+	implementation 'org.jboss.resteasy:resteasy-core:4.7.1.Final'
+	
+	// https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api
+	implementation 'javax.ws.rs:javax.ws.rs-api:2.1.1'
+	
+	// https://mvnrepository.com/artifact/com.google.inject.extensions/guice-persist
+	implementation 'com.google.inject.extensions:guice-persist:5.0.1'
+		
+	// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+	compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+		
+	// Use JUnit Jupiter API for testing.
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+
+	// Use JUnit Jupiter Engine for testing.
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+	// This dependency is used by the application.
+	implementation 'com.google.guava:guava:30.0-jre'
+	
+}
