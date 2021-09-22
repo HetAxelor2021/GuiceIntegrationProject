@@ -8,7 +8,15 @@
 </head>
 <body>
 	Hello Googler <br />
+	
+	<a href="rest/guice/sayhello" target="_blank">Say hello</a>
+	<a href="rest/guice/authbyuri?userName=test&password=test" target="_blank">Login By URI </a>
+	<a href="rest/guice/authbyquery?userName=test&password=test" target="_blank">Login By Query</a>
+	<%--
+	
 	<a href="guice" target = "_blank" >Guice Servlet</a>
 	<a href="login" target = "_blank">login guice servlet</a>
+	 --%>
+	
 </body>
 </html>

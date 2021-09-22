@@ -47,9 +47,13 @@ dependencies{
 	implementation 'org.jboss.resteasy:resteasy-client:4.7.1.Final'
 
 	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-guice
-	implementation 'org.jboss.resteasy:resteasy-guice:4.7.1.Final'
+	implementation// https://mvnrepository.com/artifact/com.sun.jersey/jersey-server
+implementation 'com.sun.jersey:jersey-server:1.19.4'
+ 'org.jboss.resteasy:resteasy-guice:4.7.1.Final'
 	
-	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-html
+	// https://mvn// https://mvnrepository.com/artifact/com.sun.jersey/jersey-server
+implementation 'com.sun.jersey:jersey-server:1.19.4'
+repository.com/artifact/org.jboss.resteasy/resteasy-html
 	implementation 'org.jboss.resteasy:resteasy-html:4.7.1.Final'
 	
 	// https://mvnrepository.com/artifact/org.postgresql/postgresql
@@ -92,5 +96,20 @@ dependencies{
 
 	// This dependency is used by the application.
 	implementation 'com.google.guava:guava:30.0-jre'
+	// https://mvnrepository.com/artifact/com.sun.jersey/jersey-json
+	implementation// https://mvnrepository.com/artifact/com.sun.jersey/jersey-server
+implementation 'com.sun.jersey:jersey-server:1.19.4'
+ 'com.sun.jersey:jersey-json:1.19.4'
+	
+	// https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-guice
+	implementation 'com.sun.jersey.contribs:jersey-guice:1.19.4'
+	
+	
+	// https://mvnrepository.com/artifact/com.sun.jersey/jersey-json
+	implementation 'com.sun.jersey:jersey-json:1.19.4'
+	
+	// https://mvnrepository.com/artifact/com.sun.jersey/jersey-server
+	implementation 'com.sun.jersey:jersey-server:1.19.4'
+	
 	
 }
