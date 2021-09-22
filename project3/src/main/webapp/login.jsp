@@ -7,8 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello Googler <br />
-	<a href="guice" target = "_blank" >Guice Servlet</a>
-	<a href="login" target = "_blank">login guice servlet</a>
+	<form action="authenticate" method="post">
+	
+		user name : <input type="text" name="username" />
+		Password : <input type="password" name="password" />
+		<button type="submit">Login</button>
+	
+	</form>
 </body>
 </html>
